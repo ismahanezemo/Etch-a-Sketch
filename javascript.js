@@ -6,17 +6,21 @@ newGrid.addEventListener("click", ()=>{
 });
 
 
-for (let i=1 ; i<=256 ; i++){
-
-const item = document.createElement('div');
-item.classList.add("grid");
-container.appendChild(item);
-
-item.addEventListener("mouseenter", (event) =>{
-    item.style.backgroundColor = 'blue';
-})
 
 
+function CreateGrid(size){
+    
+    
+    for (let i=1 ; i<= (size*size) ; i++){
+        const item = document.createElement('div');
+        item.classList.add("grid");
+        container.appendChild(item);
+        
+        item.addEventListener("mouseenter", (event) =>{
+            item.style.backgroundColor = 'blue';})
 
 }
+    }
+    
+CreateGrid(16);
 
