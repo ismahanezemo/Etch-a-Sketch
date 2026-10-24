@@ -1,5 +1,6 @@
 const container = document.querySelector("#container");
 const newGrid = document.querySelector(".newGrid");
+const color = document.querySelector("#pick")
 
 newGrid.addEventListener("click", ()=>{
     let choice = prompt("Enter the number of squares per side for the new grid","");
@@ -21,7 +22,7 @@ newGrid.addEventListener("click", ()=>{
 
 function CreateGrid(size){
     container.textContent = "";
-    
+
         for (let i=1 ; i<= (size*size) ; i++){
         const item = document.createElement('div');
         item.classList.add("grid");
@@ -30,7 +31,7 @@ function CreateGrid(size){
         item.style.height = ( 480/size)+"px"
         
         item.addEventListener("mouseenter", (event) =>{
-            item.style.backgroundColor = 'blue';})
+            item.style.backgroundColor = color.value;})
             
         
 }
