@@ -1,10 +1,15 @@
 const container = document.querySelector("#container");
 const newGrid = document.querySelector(".newGrid");
 const color = document.querySelector("#pick")
-const rgb = (num) => {
-  return Math.floor(Math.random() * num);
-};
+const pick = document.querySelector(".mode1");
+const random = document.querySelector(".mode2");
 
+pick.addEventListener("click", ()=>{
+
+});
+random.addEventListener("click",()=>{
+
+});
 
 newGrid.addEventListener("click", ()=>{
     let choice = prompt("Enter the number of squares per side for the new grid","");
