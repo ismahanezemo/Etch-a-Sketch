@@ -26,13 +26,14 @@ body{
     width:  700px;
     background-color: rgb(241, 15, 15);
     border-radius: 0 0 40px 40px;
+    margin-top: 50px;
 
 }
 
 h1{
     font-family: "Lobster Two", cursive;
     font-style: italic;
-    font-size: 35px;
+    font-size: 50px;
     color: #f3d26b;
     text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.4);
     margin: 20px;
@@ -45,6 +46,7 @@ h1{
     border: 2px solid black;
     flex-wrap: wrap;
     background-color: aliceblue;
+    
     
 
 }
@@ -102,7 +104,8 @@ h1{
 .base{
     display: flex;
     flex-direction: row;
-   
+    gap: 500px;
+    margin: 20px;
 }
 .knob {
     width: 70px;

@@ -1,6 +1,10 @@
 const container = document.querySelector("#container");
 const newGrid = document.querySelector(".newGrid");
 const color = document.querySelector("#pick")
+const rgb = (num) => {
+  return Math.floor(Math.random() * num);
+};
+
 
 newGrid.addEventListener("click", ()=>{
     let choice = prompt("Enter the number of squares per side for the new grid","");
@@ -31,11 +35,18 @@ function CreateGrid(size){
         item.style.height = ( 480/size)+"px"
         
         item.addEventListener("mouseenter", (event) =>{
-            item.style.backgroundColor = color.value;})
-            
+            /*item.style.backgroundColor = color.value;})*/
+            const r = Math.floor(Math.random() * 256);
+            const g = Math.floor(Math.random() * 256);
+            const b = Math.floor(Math.random() * 256);
+            item.style.backgroundColor =`rgb(${r}, ${g}, ${b})`;})
+          
+
+}
+
         
 }
-    }
+    
 
 
     
