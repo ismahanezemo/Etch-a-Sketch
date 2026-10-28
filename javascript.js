@@ -4,11 +4,17 @@ const color = document.querySelector("#pick")
 const pick = document.querySelector(".mode1");
 const random = document.querySelector(".mode2");
 
+let btn = "off";
+let click = false ;
+
 pick.addEventListener("click", ()=>{
+    btn = "on"
 
 });
-random.addEventListener("click",()=>{
 
+
+random.addEventListener("click",()=>{
+    btn = "in"
 });
 
 newGrid.addEventListener("click", ()=>{
@@ -39,12 +45,22 @@ function CreateGrid(size){
         item.style.width = ( 480/size)+"px"
         item.style.height = ( 480/size)+"px"
         
+        item.addEventListener("click", (event) => {
+            click = !click ;
+        })
+    
         item.addEventListener("mouseenter", (event) =>{
-            /*item.style.backgroundColor = color.value;})*/
+            if (click){
+            if (btn === "on"){
+                item.style.backgroundColor = color.value;
+
+            }else if (btn === "in") {
+            
             const r = Math.floor(Math.random() * 256);
             const g = Math.floor(Math.random() * 256);
             const b = Math.floor(Math.random() * 256);
-            item.style.backgroundColor =`rgb(${r}, ${g}, ${b})`;})
+            item.style.backgroundColor =`rgb(${r}, ${g}, ${b})`;}
+}})
           
 
 }
