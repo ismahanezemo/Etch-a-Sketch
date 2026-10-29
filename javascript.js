@@ -42,8 +42,8 @@ function CreateGrid(size){
         const item = document.createElement('div');
         item.classList.add("grid");
         container.appendChild(item);
-        item.style.width = ( 480/size)+"px"
-        item.style.height = ( 480/size)+"px"
+        item.style.width = ( 500/size)+"px"
+        item.style.height = ( 500/size)+"px"
         
         item.addEventListener("click", (event) => {
             click = !click ;
