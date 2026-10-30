@@ -8,26 +8,17 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <div class="right">
-            <div class="squares">
-                <button class="square1"></button>
-                <button class="square2"></button>
-                <button class="square3"></button>
-            </div>
-            <div id="btns">
-                <button class="mode1">
-                    <p> Mode 1 </p> 
-                     <input type="color" id="pick">
-                </button>
-                     
-                <button class="mode2">
-                    <p>Mode 2 </p>  
-                 </button>
-            </div>
+        <div class="note">
+            <h3>How to play !</h3>
+            <p><strong>Mode 1 : </strong>pick your own color</p>
+            <p><strong>Mode 2 : </strong>random rainbow colors</p>
+            <p>"click a square to start drawing , click again to stop"</p>
         </div>
+
         <div class="main">
             <h1>Etch a Sketch</h1>
             <div id ="container"></div>
@@ -36,9 +27,29 @@
                 <div class="knob"></div>
             </div>
         </div>
-        <div class="left">
+         <div class="right">
             <button class="newGrid">Change the Grid</button>
+            <div class="remote">
+                <div class="squares">
+                    <button class="square1"></button>
+                    <button class="square2"></button>
+                    <button class="square3"></button>
+                </div>
+                <div id="btns">
+                    <button class="mode1">
+                        <p> Mode 1 </p> 
+                        <input type="color" id="pick">
+                    </button>
+                     
+                    <button class="mode2">
+                       <p>Mode 2 </p>  
+                    </button>
+                </div>
+            </div>
+            
         </div>
+        
+        
 
         <script src="javascript.js"></script>
     </body>
